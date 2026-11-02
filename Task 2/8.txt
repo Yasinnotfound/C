@@ -1,0 +1,47 @@
+/*This requirement can be also made using  switch case which is easier and more readable*/
+#include <stdio.h>
+#include <ctype.h>
+
+char letter;
+
+int main()
+{
+    printf("Enter your alphabet letter: ");
+    scanf(" %c", &letter);
+
+    if(!isalpha(letter)){             /*A library to check that the input is actually a letter*/
+        printf("The input is not a letter !");
+        return 0;
+    }
+
+    else if(letter == 'A' || letter == 'E' || letter == 'I' || letter == 'O' || letter == 'U'
+         || letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u'){
+        printf("The input letter is a vowel");
+    }
+
+    else{
+        printf("The input letter is a constant");
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

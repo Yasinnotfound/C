@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int base;
+
+int main()
+{
+    printf("Enter your base number (Odd numbers only !):  ");
+    scanf("%d", &base);
+
+    int rows = (base + 1) /2;
+
+    for(int i = 1; i <= rows; i++){
+
+            for(int j = 1; j <= rows - i; j++){
+                printf(" ");
+            }
+
+            for(int y = 1; y <= 2*i-1; y++){
+                printf("*");
+            }
+            printf("\n");
+
+    }
+    return 0;
+
+}

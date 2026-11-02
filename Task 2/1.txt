@@ -1,0 +1,31 @@
+
+#include <stdio.h>
+
+int number1, number2;
+
+int main() {
+
+    printf("Enter your number range");
+    scanf("%d %d", &number1, &number2);
+    
+    printf("\n");
+    printf("Your even numbers are:  ");
+    for(int i = number1; i <= number2; i++){
+    if(i % 2 ==0){
+        
+        printf("%d  ", i);
+    }
+    }
+    
+printf("\n");
+
+    printf("Your odd numbers are:  ");
+    for(int i = number1; i <=number2; i++){
+    if(i % 2 != 0){
+
+        printf("%d  ", i);
+    }
+    }
+    
+    return 0;
+}

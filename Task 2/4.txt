@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int base;
+
+int main()
+{
+    printf("Enter your base number:  ");
+    scanf("%d", &base);
+
+    for(int i = 1; i <= base; i++){
+            printf(" \n ");
+
+            for(int y = 1; y <=i; y++){
+                printf("*");
+            }
+
+    }
+
+}
